@@ -105,7 +105,7 @@ if (currentQuestionIndex < questions.length - 1) {
     <div style={{ padding: '20px', margin:"auto"}}>
       <h2>{questions[currentQuestionIndex].question}</h2>
       {questions[currentQuestionIndex].options.map((option, index) => (
-        <div style={{ marginBottom: '10px', width:"85vw", display:"flex", justifyContent:"space-between", paddingBlock: "8px", paddingInline:"10px" ,textAlign: 'center', backgroundColor: index === 0 ? '#f1c40f' : '#e74c3c', color: 'white', padding: '10px', borderRadius: '5px' }} key={index}>
+        <div style={{ marginBottom: '10px', width:"85vw", display:"flex", justifyContent:"space-between", paddingBlock: "14px", paddingInline:"10px" ,textAlign: 'center', backgroundColor: selectedOption === option ? '#4caf50' : 'black', borderRadius:"10px" }} key={index}>
           <input style={{ width: '20px'}}
             type="radio"
             value={option}
