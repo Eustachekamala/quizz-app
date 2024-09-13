@@ -95,9 +95,9 @@ if (currentQuestionIndex < questions.length - 1) {
   };
 
   if (isQuizComplete) {
-    return <div style={{ padding: '10px', margin:"auto", textAlign: 'center', width: "100vw"}}>
-      <h2>You scored {score} out of {questions.length}</h2>
-      <button style={{ padding: '10px', backgroundColor: '#4caf50', color: 'white', border: 'none', borderRadius: '5px' }} onClick={() => setIsQuizComplete(false)}>Restart</button>
+    return <div style={{ padding: '10px', margin:"auto", textAlign: 'center', width: "85vw"}}>
+      <h2 style={{ marginLeft:"20px", width: "85vw"}}>You scored {score} out of {questions.length}</h2>
+      <button style={{ padding: '10px', backgroundColor: '#4caf50', color: 'white', border: 'none', borderRadius: '5px', marginLeft:"30px" }} onClick={() => setIsQuizComplete(false)}>Restart</button>
     </div>;
   }
 
