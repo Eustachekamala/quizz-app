@@ -9,62 +9,62 @@ function App() {
     },
     {
       question: 'What is the capital of Germany?',
-      options: ['Berlin', 'Munich', 'Frankfurt', 'Hamburg'],
+      options: ['Munich', 'Frankfurt','Berlin', 'Hamburg'],
       correct: 'Berlin',
     },
     {
       question: 'What is the capital of Italy?',
-      options: ['Rome', 'Milan', 'Venice', 'Florence'],
+      options: [ 'Milan', 'Venice','Rome', 'Florence'],
       correct: 'Rome',
     },
     {
       question: 'What is the capital of Spain?',
-      options: ['Madrid', 'Barcelona', 'Valencia', 'Seville'],
+      options: [ 'Barcelona','Madrid', 'Valencia', 'Seville'],
       correct: 'Madrid',
     },
     {
       question: 'What is the capital of the United States?',
-      options: ['Washington D.C.', 'New York City', 'Los Angeles', 'Chicago'],
+      options: [ 'New York City', 'Los Angeles','Washington D.C.', 'Chicago'],
       correct: 'Washington D.C.',
     },
     {
       question: 'What is the capital of Canada?',
-      options: ['Ottawa', 'Toronto', 'Montreal', 'Vancouver'],
+      options: [ 'Toronto', 'Montreal','Ottawa', 'Vancouver'],
       correct: 'Ottawa',
     },
     {
       question: 'What is the capital of Australia?',
-      options: ['Sydney', 'Melbourne', 'Brisbane', 'Perth'],
+      options: [ 'Melbourne','Sydney', 'Brisbane', 'Perth'],
       correct: 'Sydney',
     },
     {
       question: 'What is the capital of Japan?',
-      options: ['Tokyo', 'Osaka', 'Nagoya', 'Kyoto'],
+      options: [ 'Osaka', 'Nagoya','Tokyo', 'Kyoto'],
       correct: 'Tokyo',
     },
     {
       question: 'What is the capital of China?',
-      options: ['Beijing', 'Shanghai', 'Guangzhou', 'Shenzhen'],
+      options: [ 'Shanghai','Beijing', 'Guangzhou', 'Shenzhen'],
       correct: 'Beijing',
     },
     {
       question: 'What is the capital of Brazil?',
-      options: ['Brasilia', 'Sao Paulo', 'Rio de Janeiro', 'Recife'],
+      options: [ 'Sao Paulo', 'Rio de Janeiro','Brasilia', 'Recife'],
       correct: 'Brasilia',
     },
     {
       question: 'What is the capital of Argentina?',
-      options: ['Buenos Aires', 'Rosario', 'La Plata', 'Córdoba'],
+      options: [ 'Rosario','Buenos Aires', 'La Plata', 'Mendoza'],
       correct: 'Buenos Aires',
     },
     {
       question: 'What is the capital of Russia?',
-      options: ['Moscow', 'Saint Petersburg', 'Kazan', 'Yekaterinburg'],
+      options: [ 'Saint Petersburg', 'Kazan', 'Yekaterinburg','Moscow'],
       correct: 'Moscow',
     },
     {
       question: 'What is the capital of India?',
-      options: ['New Delhi', 'Kolkata', 'Mumbai', 'Chennai'],
+      options: [ 'Kolkata','New Delhi', 'Mumbai', 'Chennai'],
       correct: 'New Delhi',
     },
   ];
@@ -97,7 +97,7 @@ if (currentQuestionIndex < questions.length - 1) {
   if (isQuizComplete) {
     return <div style={{ padding: '10px', margin:"auto", textAlign: 'center', width: "85vw"}}>
       <h2 style={{ marginLeft:"20px", width: "85vw"}}>You scored {score} out of {questions.length}</h2>
-      <button style={{ padding: '10px', backgroundColor: '#4caf50', color: 'white', border: 'none', borderRadius: '5px', marginLeft:"30px" }} onClick={() => setIsQuizComplete(false)}>Restart</button>
+      <button style={{ padding: '10px', backgroundColor: '#4caf50', color: 'white', border: 'none', borderRadius: '5px', marginLeft:"30px" }} onClick={() => setIsQuizComplete(false)}>Start Again</button>
     </div>;
   }
 
